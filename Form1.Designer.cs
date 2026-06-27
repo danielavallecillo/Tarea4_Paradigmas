@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            numericUpDown2 = new NumericUpDown();
+            label4 = new Label();
+            textBox2 = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             numericUpDown1 = new NumericUpDown();
             button2 = new Button();
             button3 = new Button();
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            numericUpDown2 = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -74,6 +74,57 @@
             splitContainer1.Size = new Size(1134, 512);
             splitContainer1.SplitterDistance = 547;
             splitContainer1.TabIndex = 0;
+            // 
+            // numericUpDown2
+            // 
+            numericUpDown2.Location = new Point(12, 370);
+            numericUpDown2.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            numericUpDown2.Name = "numericUpDown2";
+            numericUpDown2.Size = new Size(162, 27);
+            numericUpDown2.TabIndex = 12;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 347);
+            label4.Name = "label4";
+            label4.Size = new Size(58, 20);
+            label4.TabIndex = 11;
+            label4.Text = "Sueldo:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(12, 270);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(162, 27);
+            textBox2.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 238);
+            label3.Name = "label3";
+            label3.Size = new Size(56, 20);
+            label3.TabIndex = 9;
+            label3.Text = "Puesto:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 133);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Edad:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 39);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 20);
+            label1.TabIndex = 7;
+            label1.Text = "Nombre:";
             // 
             // numericUpDown1
             // 
@@ -119,56 +170,6 @@
             dataGridView1.Size = new Size(583, 512);
             dataGridView1.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 39);
-            label1.Name = "label1";
-            label1.Size = new Size(67, 20);
-            label1.TabIndex = 7;
-            label1.Text = "Nombre:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 133);
-            label2.Name = "label2";
-            label2.Size = new Size(46, 20);
-            label2.TabIndex = 8;
-            label2.Text = "Edad:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 238);
-            label3.Name = "label3";
-            label3.Size = new Size(56, 20);
-            label3.TabIndex = 9;
-            label3.Text = "Puesto:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(12, 270);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(162, 27);
-            textBox2.TabIndex = 10;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(12, 347);
-            label4.Name = "label4";
-            label4.Size = new Size(58, 20);
-            label4.TabIndex = 11;
-            label4.Text = "Sueldo:";
-            // 
-            // numericUpDown2
-            // 
-            numericUpDown2.Location = new Point(12, 370);
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(162, 27);
-            numericUpDown2.TabIndex = 12;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -182,9 +183,9 @@
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             ResumeLayout(false);
         }
 

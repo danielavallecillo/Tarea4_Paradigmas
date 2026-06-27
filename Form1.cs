@@ -45,6 +45,14 @@ namespace Tarea_3_Paradigmas
                 con.Execute(sql, emple);
                 this.dataGridView1.DataSource = con.Query<E.M_EMPLEADO>(sql2).ToList();
                 con.Close();
+
+                //nota para mi: estos limpian los campos
+                this.textBox1.Clear();
+                this.numericUpDown1.Value = 0;
+                this.textBox2.Clear();
+                this.numericUpDown2.Value = 0;
+
+
             }
         }
     }
