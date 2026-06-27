@@ -30,7 +30,7 @@ namespace Tarea_3_Paradigmas
             emple.nombre = this.textBox1.Text;
             emple.puesto = this.textBox2.Text;
             emple.edad = Convert.ToInt32(this.numericUpDown1.Value);
-            emple.sueldo = Convert.ToDouble(this.numericUpDown2.Value); 
+            emple.sueldo = Convert.ToDouble(this.numericUpDown2.Value);
 
             string cadena = "workstation id=empresa2.mssql.somee.com;packet size=4096;user id=danielavf_SQLLogin_1;pwd=DaniEmpresa2026;data source=empresa2.mssql.somee.com;persist security info=False;initial catalog=empresa2;TrustServerCertificate=True";
             string sql = @"insert into
@@ -53,6 +53,27 @@ namespace Tarea_3_Paradigmas
                 this.numericUpDown2.Value = 0;
 
 
+            }
+        }
+
+        //BOTON ELIMINAR
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //nota para mi: elimina la row entera, no un dato en especifico por ahora
+            int r = this.dataGridView1.CurrentRow.Index;
+            E.M_EMPLEADO p = new E.M_EMPLEADO();
+            p.id = Convert.ToInt32(this.dataGridView1.Rows[r].Cells[0].Value.ToString());
+
+            string cadena = "workstation id=empresa2.mssql.somee.com;packet size=4096;user id=danielavf_SQLLogin_1;pwd=DaniEmpresa2026;data source=empresa2.mssql.somee.com;persist security info=False;initial catalog=empresa2;TrustServerCertificate=True";
+            string sql_b = @"
+                           delete from EMPLEADOS
+                           where id=@id";
+
+            string sql = "select * from EMPLEADOS";
+            using (var con = new Microsoft.Data.SqlClient.SqlConnection(cadena))
+            {
+                con.Execute(sql_b, p);
+                this.dataGridView1.DataSource = con.Query<E.M_EMPLEADO>(sql).ToList();
             }
         }
     }

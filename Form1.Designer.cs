@@ -40,6 +40,7 @@
             button3 = new Button();
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -57,6 +58,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(button1);
             splitContainer1.Panel1.Controls.Add(numericUpDown2);
             splitContainer1.Panel1.Controls.Add(label4);
             splitContainer1.Panel1.Controls.Add(textBox2);
@@ -170,6 +172,16 @@
             dataGridView1.Size = new Size(583, 512);
             dataGridView1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.Location = new Point(365, 358);
+            button1.Name = "button1";
+            button1.Size = new Size(162, 39);
+            button1.TabIndex = 13;
+            button1.Text = "Eliminar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -203,5 +215,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Button button1;
     }
 }
