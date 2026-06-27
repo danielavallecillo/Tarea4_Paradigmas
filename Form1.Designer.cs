@@ -149,7 +149,7 @@
             button3.Name = "button3";
             button3.Size = new Size(162, 39);
             button3.TabIndex = 4;
-            button3.Text = "Cargar";
+            button3.Text = "Mostrar";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
