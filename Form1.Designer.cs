@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            button3 = new Button();
             domainUpDown1 = new DomainUpDown();
             textBox1 = new TextBox();
-            button2 = new Button();
-            button1 = new Button();
             dataGridView1 = new DataGridView();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -49,10 +49,10 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(button2);
+            splitContainer1.Panel1.Controls.Add(button3);
             splitContainer1.Panel1.Controls.Add(domainUpDown1);
             splitContainer1.Panel1.Controls.Add(textBox1);
-            splitContainer1.Panel1.Controls.Add(button2);
-            splitContainer1.Panel1.Controls.Add(button1);
             // 
             // splitContainer1.Panel2
             // 
@@ -60,6 +60,16 @@
             splitContainer1.Size = new Size(800, 450);
             splitContainer1.SplitterDistance = 386;
             splitContainer1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(209, 30);
+            button3.Name = "button3";
+            button3.Size = new Size(162, 39);
+            button3.TabIndex = 4;
+            button3.Text = "Cargar";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // domainUpDown1
             // 
@@ -76,24 +86,6 @@
             textBox1.Size = new Size(162, 27);
             textBox1.TabIndex = 2;
             // 
-            // button2
-            // 
-            button2.Location = new Point(209, 30);
-            button2.Name = "button2";
-            button2.Size = new Size(162, 39);
-            button2.TabIndex = 1;
-            button2.Text = "Agregar";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(209, 114);
-            button1.Name = "button1";
-            button1.Size = new Size(162, 39);
-            button1.TabIndex = 0;
-            button1.Text = "Mostrar";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -103,6 +95,15 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(410, 450);
             dataGridView1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(209, 114);
+            button2.Name = "button2";
+            button2.Size = new Size(162, 39);
+            button2.TabIndex = 5;
+            button2.Text = "Agregar";
+            button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -124,10 +125,10 @@
         #endregion
 
         private SplitContainer splitContainer1;
-        private Button button2;
-        private Button button1;
         private DataGridView dataGridView1;
         private DomainUpDown domainUpDown1;
         private TextBox textBox1;
+        private Button button3;
+        private Button button2;
     }
 }
